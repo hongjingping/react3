@@ -131,6 +131,17 @@ React项目构建和路由
 4. 在index.html中加入挂载点`<div id="app"></div>`
 5. 下载包`sudo npm i --save react react-dom`
 ###### 第05节：路由：Hello React路由
+1. `sudo npm i --save react-router react-router-dom`
+2. 在app中新建wikiHong.js文件
+3. 在index.js中引入
+4. `npm run server`
+5. 新建wikiHong2.js和wikiHong3.js文件
+6. index.js中引入
+```
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+```
+7. Nav.js
+8. 
 ###### 第06节：路由：NavLink中常用选项
 ###### 第07节：路由：404设置和跳转设置
 ###### 第08节：路由：通过路由传值的方法
