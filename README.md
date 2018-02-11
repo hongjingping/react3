@@ -113,6 +113,23 @@ React项目构建和路由
   ```
   19. `npm run server`就可以看到自动更新
 ###### 第04节：构建：webpack一步一步构建02
+1. `sudo npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react`
+2. 在webpack.config.js中写loader
+```
+  module: {
+    loaders: [{
+      test: /.\js$/,
+      exclude: /node_modules/,
+      loaders: "babel-loader",
+      query: {
+        presets: ['es2015', 'react']
+      }
+    }]
+  }
+```
+3. `npm run server`
+4. 在index.html中加入挂载点`<div id="app"></div>`
+5. 下载包`sudo npm i --save react react-dom`
 ###### 第05节：路由：Hello React路由
 ###### 第06节：路由：NavLink中常用选项
 ###### 第07节：路由：404设置和跳转设置
