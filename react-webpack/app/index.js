@@ -14,7 +14,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={WikiHong} />
         <Route path="/WikiHong2" component={WikiHong2} />
-        <Route path="/WikiHong3" component={WikiHong3} />
+        <Route path="/WikiHong3/:param/:aaa" component={WikiHong3} />
         <Redirect from="/Redirect" to="/WikiHong2" />
         <Route component={Error} />
       </Switch>
