@@ -136,12 +136,14 @@ React项目构建和路由
 3. 在index.js中引入
 4. `npm run server`
 5. 新建wikiHong2.js和wikiHong3.js文件
-6. index.js中引入
+6. index.js中引入路由，Router表示容器，Route表示路由
 ```
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 ```
-7. Nav.js
-8. 
+7. Nav.js,NavLink相当于平时的a标签
+`import {NavLink} from 'react-router-dom';`
+8. `exact`表示精确匹配
+9. NavLink的样式
 ###### 第06节：路由：NavLink中常用选项
 ###### 第07节：路由：404设置和跳转设置
 ###### 第08节：路由：通过路由传值的方法

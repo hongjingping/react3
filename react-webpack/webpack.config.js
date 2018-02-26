@@ -13,13 +13,18 @@ module.exports = {
     port: 1108
   },
   module: {
-    loaders: [{
-      test: /.\js$/,
-      exclude: /node_modules/,
-      loaders: "babel-loader",
-      query: {
-        presets: ['es2015', 'react']
+    loaders: [
+      {
+        test: /.\js$/,
+        exclude: /node_modules/,
+        loaders: "babel-loader",
+        query: {
+          presets: ['es2015', 'react']
+        }
+      }, {
+        test: /.\css$/,
+        loader: ['style-loader', 'css-loader']
       }
-    }]
+    ]
   }
 }

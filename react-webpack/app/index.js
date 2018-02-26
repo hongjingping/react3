@@ -10,9 +10,9 @@ ReactDOM.render(
   <Router>
     <div>
       <Nav/>
-        <Route exact path="/" component={WikiHong} />
-        <Route path="/WikiHong2" component={WikiHong2} />
-        <Route path="/WikiHong3" component={WikiHong3} />
+      <Route exact path="/" component={WikiHong} />
+      <Route path="/WikiHong2" component={WikiHong2} />
+      <Route path="/WikiHong3" component={WikiHong3} />
     </div>
   </Router>,
   document.getElementById('app')
