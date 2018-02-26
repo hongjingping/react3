@@ -145,7 +145,11 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 8. `exact`表示精确匹配
 9. NavLink的样式
 ###### 第06节：路由：NavLink中常用选项
+1. css文件
+2. style
+3. activeClassName
 ###### 第07节：路由：404设置和跳转设置
+
 ###### 第08节：路由：通过路由传值的方法
 ###### 第09节：路由：Router中的属性和路由模式
 ###### 第10节：路由：prompt用法讲解

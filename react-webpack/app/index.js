@@ -1,18 +1,22 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import WikiHong from './wikiHong.js';
 import WikiHong2 from './wikiHong2.js';
 import WikiHong3 from './wikiHong3.js';
 import Nav from './nav.js';
+import Error from './404.js';
 
 ReactDOM.render(
   <Router>
     <div>
       <Nav/>
-      <Route exact path="/" component={WikiHong} />
-      <Route path="/WikiHong2" component={WikiHong2} />
-      <Route path="/WikiHong3" component={WikiHong3} />
+      <Switch>
+        <Route exact path="/" component={WikiHong} />
+        <Route path="/WikiHong2" component={WikiHong2} />
+        <Route path="/WikiHong3" component={WikiHong3} />
+        <Route component={Error} />
+      </Switch>
     </div>
   </Router>,
   document.getElementById('app')
