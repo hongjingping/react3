@@ -152,4 +152,6 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 ###### 第08节：路由：通过路由传值的方法
 ###### 第09节：路由：Router中的属性和路由模式
+1. basename增加层级,功能模块上升
+2. forceRefresh={true}强制再次刷新，此时我们的路由就不起作用了。
 ###### 第10节：路由：prompt用法讲解

@@ -8,7 +8,7 @@ import Nav from './nav.js';
 import Error from './404.js';
 
 ReactDOM.render(
-  <Router>
+  <Router basename="demo" forceRefresh={true}>
     <div>
       <Nav/>
       <Switch>
