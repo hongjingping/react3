@@ -161,3 +161,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
   4. NativeRouter,经常配合ReactNative使用，多用于移动端，以后ReactNative课程中会详细讲解。
   5. StaticRouter,设置静态路由，需要和后台服务器配合设置，比如设置服务端渲染时使用。
 ###### 第10节：路由：prompt用法讲解
+1. 弹出框~Prompt
+  1. 如果你用MemoryRouter路由模式，<Prompt>不起作用。
+  2. message：用于显示提示的文本信息。
+  3. when：传递布尔值，相当于标签的开关，默认是true，设置成false时，<Prompt>失效。
