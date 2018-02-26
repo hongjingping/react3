@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, HashRouter, MemoryRouter, Route, Switch, Redirect} from 'react-router-dom';
 import WikiHong from './wikiHong.js';
 import WikiHong2 from './wikiHong2.js';
 import WikiHong3 from './wikiHong3.js';
@@ -8,7 +8,7 @@ import Nav from './nav.js';
 import Error from './404.js';
 
 ReactDOM.render(
-  <Router basename="demo" forceRefresh={true}>
+  <Router basename="demo" forceRefresh={false}>
     <div>
       <Nav/>
       <Switch>

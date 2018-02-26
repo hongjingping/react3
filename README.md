@@ -154,4 +154,10 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 ###### 第09节：路由：Router中的属性和路由模式
 1. basename增加层级,功能模块上升
 2. forceRefresh={true}强制再次刷新，此时我们的路由就不起作用了。
+3. 5种路由方式
+  1. BrowserRouter, 浏览器的路由方式，也是我们一直在学习的路由方式，在开发中最常使用。
+  2. HashRouter,在路径前加入#号成为一个哈希值。Hash模式的好处是，再也不会因为我们刷新而找不到我们的对应路径了。
+  3. MemoryRouter,不存储history，所有路由过程保存在内存里，不能进行前进后退，因为地址栏没有发生任何变化。
+  4. NativeRouter,经常配合ReactNative使用，多用于移动端，以后ReactNative课程中会详细讲解。
+  5. StaticRouter,设置静态路由，需要和后台服务器配合设置，比如设置服务端渲染时使用。
 ###### 第10节：路由：prompt用法讲解
